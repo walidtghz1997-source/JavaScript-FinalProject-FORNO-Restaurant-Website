@@ -1,0 +1,210 @@
+@media(max-width:900px) {
+.boxHeader {
+height: 65px;
+}
+.navBare,
+.boxPanier {
+display: none;
+}
+.burger {
+display: flex;
+align-items: center;
+gap: 9px;
+}
+.burger #burger {
+font-size: 23px;
+cursor: pointer;
+line-height: 1;
+}
+.boxLogo {
+width: auto;
+}
+.heroSection {
+grid-template-columns: 1fr;
+padding-top: 45px;
+}
+.boxLeft {
+text-align: center;
+}
+.bonnePate {
+justify-content: center;
+}
+.titleHerosection {
+margin: 20px auto 0;
+font-size: 59px;
+}
+.laime {
+font-size: 58px;
+}
+.paraHero {
+font-size: 10px;
+}
+.boxRecettes {
+justify-content: center;
+}
+.boxRight {
+height: 410px;
+margin-top: 10px;
+}
+.boxRight img {
+width: 450px;
+height: 410px;
+}
+.heroLabel {
+right: 8%;
+top: 35px;
+}
+.heroStamp {
+left: 16%;
+bottom: 55px;
+}
+.advantages {
+grid-template-columns: 1fr;
+}
+.advantages div {
+border-right: 0;
+border-bottom: 1px solid #dfd9cf;
+}
+.advantages div:last-child {
+border-bottom: 0;
+}
+.pizzaGrid {
+grid-template-columns: repeat(2,1fr);
+}
+.redSection,
+.teamSection {
+grid-template-columns: 1fr;
+}
+.redSection {
+gap: 25px;
+}
+.teamImage {
+height: 400px;
+}
+.horizonsGrid {
+grid-template-columns: repeat(2,1fr);
+row-gap: 35px;
+}
+.footerMain {
+grid-template-columns: repeat(2,1fr);
+}
+.navBare.mobileOpen {
+display: flex;
+position: absolute;
+top: 65px;
+left: 0;
+right: 0;
+background: #f5f0e7;
+border-bottom: 1px solid #ddd5c9;
+z-index: 10;
+padding: 18px;
+flex-direction: column;
+gap: 15px;
+}
+.navBare.mobileOpen .lementNavbare {
+font-size: 12px;
+}
+}
+@media(max-width:560px) {
+.heroSection {
+padding: 35px 15px 20px;
+}
+.titleHerosection {
+font-size: 48px;
+letter-spacing: -3px;
+}
+.laime {
+font-size: 49px;
+}
+.paraHero span {
+display: inline;
+}
+.boxRight {
+height: 330px;
+}
+.boxRight img {
+width: 350px;
+height: 330px;
+}
+.heroLabel {
+top: 15px;
+right: 0;
+}
+.heroStamp {
+width: 68px;
+height: 68px;
+left: 7%;
+bottom: 38px;
+}
+.heroStamp strong {
+font-size: 20px;
+}
+.heroCount {
+right: 0;
+bottom: 45px;
+}
+.menuSection {
+padding: 45px 15px;
+}
+.sectionIntro {
+display: block;
+}
+.sectionIntro p {
+margin-top: 15px;
+}
+.filters {
+grid-template-columns: 1fr;
+}
+.pizzaGrid {
+grid-template-columns: 1fr;
+}
+.pizzaImage {
+height: 260px;
+}
+.redSection {
+padding: 45px 18px;
+}
+.redSection h2 {
+font-size: 31px;
+}
+.teamSection {
+padding: 45px 15px;
+}
+.teamImage {
+height: 310px;
+}
+.teamText h2 {
+font-size: 29px;
+}
+.horizonsSection {
+padding: 45px 18px;
+}
+.horizonsTitle {
+display: block;
+}
+.horizonsTitle p {
+margin-top: 15px;
+}
+.horizonsGrid {
+grid-template-columns: 1fr;
+}
+.reservationSection {
+padding: 28px 15px;
+}
+.reservationSection h2 {
+font-size: 19px;
+}
+.footerMain {
+grid-template-columns: 1fr 1fr;
+padding: 30px 15px;
+}
+.footerBottom {
+padding: 12px 15px;
+display: block;
+line-height: 1.8;
+}
+.cartPanel {
+width: 100%;
+right: -100%;
+}
+}

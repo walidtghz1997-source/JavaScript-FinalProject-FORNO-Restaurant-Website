@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forno</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="https://kit.fontawesome.com/50950c4c6a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="boxHeader">
+            <div class="boxLogo">
+                <h1 class="logo">forno <span class="squarecolor"></span></h1>
+                <span class="artisanale">PIZZA ARTISANALE</span>
+            </div>
+            <nav id="navBar" class="navBare">
+                <a class="lementNavbare" href="#accueil">Accueil</a>
+                <a class="lementNavbare" href="#carte">Notre carte</a>
+                <a class="lementNavbare" href="#apropos">A propos</a>
+                <a class="lementNavbare" href="#contact">contact</a>
+            </nav>
+            <div class="boxPanier">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span class="lementNavbare">Mon panier</span>
+                <span class="totalproductCart">0</span>
+            </div>
+            <div class="burger">
+                <span id="burger">☰</span>
+                <span class="boxShopping"><i class="fa-solid fa-bag-shopping"></i></span>
+                <span class="totalproductCart">0</span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="heroSection" id="accueil">
+            <div class="boxLeft">
+                <span class="bonnePate"><span class="borderPate"></span>BONNE PATE. BONNE HUMEUR.</span>
+                <h1 class="titleHerosection">La pizza. <span>Comme on</span></h1>
+                <span class="laime em">l'aime.</span>
+                <p class="paraHero"><span>Une pate doree, des ingredients genereux et ce</span><br><span>petit gout qui
+                        donne envie de reprendre une part.</span></p>
+                <button class="btnjechoisis" type="button">Je choisis ma pizza</button>
+                <div class="boxRecettes">
+                    <span class="sircleNumber">6</span>
+                    <div class="boxParaSircle">
+                        <span class="parasircle">recettes a decouvrir.</span>
+                        <span class="parasircle">Votre prochaine preferee est ici.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="boxRight">
+                <div class="heroLabel">LA MARGHERITA · L'ORIGINALE</div>
+                <img src="images/hero-pizza-transparent.png" alt="pizza artisanale">
+                <div class="heroStamp">LA SAUCE<br><strong>part.</strong><small>C'EST PAR ICI</small></div>
+                <span class="heroCount">01 / 06</span>
+            </div>
+        </section>
+        <section class="advantages">
+            <div><span>01</span><strong>Une pate doree</strong></div>
+            <div><span>02</span><strong>Des recettes genereuses</strong></div>
+            <div><span>03</span><strong>A emporter ou a livrer</strong></div>
+        </section>
+        <section class="menuSection" id="carte">
+            <div class="sectionIntro">
+                <div>
+                    <span class="sectionEyebrow">A CHACUN SA PART</span>
+                    <h2>La carte des <em>envies.</em></h2>
+                </div>
+                <p>Les classiques qu'on adore.<br>Les nouvelles qu'on adopte.</p>
+            </div>
+            <div class="filters">
+                <div class="searchBox"><i class="fa-solid fa-magnifying-glass"></i><input id="inputSearch" type="text"
+                        placeholder="Quelle pizza vous fait envie ?"></div>
+                <select id="categoryFilter">
+                    <option value="all">Toutes les pizzas</option>
+                    <option value="classiques">Classiques</option>
+                    <option value="specialites">Specialites</option>
+                    <option value="vegetariennes">Vegetariennes</option>
+                </select>
+            </div>
+            <div class="menuForno"><span id="pizzaCount">6 pizzas a decouvrir</span></div>
+            <div class="pizzaGrid" id="pizzaGrid">
+                <div class="pizzaCard">
+                    <div class="boxImage">
+                        <div class="pizzaImage">
+                            <img src="images/margherita.png" alt="Margherita">
+                            <span class="pizzaTag">L'ORIGINALE</span>
+                            <span class="pizzaNumber">01</span>
+                        </div>
+                    </div>
+                    <div class="pizzaInfo">
+                        <span class="pizzaType">Classiques</span>
+                        <h3>Margherita</h3>
+                        <p>Sauce tomate, mozzarella & basilic frais</p>
+                        <div class="pizzaBottom">
+                            <span class="pizzaPrice">49<small> MAD</small></span>
+                            <button class="addPizza" type="button">+ Ajouter</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="pizzaCard">
+                    <div class="boxImage">
+                        <div class="pizzaImage">
+                            <img src="images/diavola.png" alt="Diavola">
+                            <span class="pizzaTag">UN PEU DE CARACTERE</span>
+                            <span class="pizzaNumber">02</span>
+                        </div>
+                    </div>
+                    <div class="pizzaInfo">
+                        <span class="pizzaType">Epicée</span>
+                        <h3>Diavola</h3>
+                        <p>Sauce tomate, mozzarella, pepperoni de boeuf & piment.</p>
+                        <div class="pizzaBottom">
+                            <span class="pizzaPrice">69<small> MAD</small></span>
+                            <button class="addPizza" type="button">+ Ajouter</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="pizzaCard">
+                    <div class="boxImage">
+
+                        <div class="pizzaImage">
+                            <img src="images/pollo.png" alt="Poulet">
+                            <span class="pizzaTag">LA GENEREUSE</span>
+                            <span class="pizzaNumber">03</span>
+                        </div>
+                    </div>
+                    <div class="pizzaInfo">
+                        <span class="pizzaType">Signatures</span>
+                        <h3>Poulet</h3>
+                        <p>Crème, poulet rôti, champignons & mozzarella.</p>
+                        <div class="pizzaBottom">
+                            <span class="pizzaPrice">79<small> MAD</small></span>
+                            <button class="addPizza" type="button">+ Ajouter</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="pizzaCard">
+                    <div class="boxImage">
+
+                        <div class="pizzaImage">
+                            <img src="images/giardino.png" alt="Giardino">
+                            <span class="pizzaTag">TOUT EN COULEURS</span>
+                            <span class="pizzaNumber">04</span>
+                        </div>
+                    </div>
+                    <div class="pizzaInfo">
+                        <span class="pizzaType">Végétarienne</span>
+                        <h3>Giardino</h3>
+                        <p>Sauce tomate, poivrons, champignons & olives.</p>
+                        <div class="pizzaBottom">
+                            <span class="pizzaPrice">65<small> MAD</small></span>
+                            <button class="addPizza" type="button">+ Ajouter</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="pizzaCard">
+                    <div class="boxImage">
+                        <div class="pizzaImage">
+                            <img src="images/tonno.png" alt="Torno">
+                            <span class="pizzaTag">L'AIR DU LARGE</span>
+                            <span class="pizzaNumber">05</span>
+                        </div>
+                    </div>
+                    <div class="pizzaInfo">
+                        <span class="pizzaType">Signatures</span>
+                        <h3>Torno</h3>
+                        <p>Sauce tomate, thon, oignons rouges & mozzarella.</p>
+                        <div class="pizzaBottom">
+                            <span class="pizzaPrice">75<small> MAD</small></span>
+                            <button class="addPizza" type="button">+ Ajouter</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="pizzaCard">
+                    <div class="boxImage">
+                        <div class="pizzaImage">
+                            <img src="images/quattro-formaggi.png" alt="Quattro Formaggi">
+                            <span class="pizzaTag">POUR LES AMOUREUX</span>
+                            <span class="pizzaNumber">06</span>
+                        </div>
+                    </div>
+                    <div class="pizzaInfo">
+                        <span class="pizzaType">Classiques</span>
+                        <h3>Quattro Formaggi</h3>
+                        <p>Mozzarella, gorgonzola, chèvre & parmesan.</p>
+                        <div class="pizzaBottom">
+                            <span class="pizzaPrice">85<small> MAD</small></span>
+                            <button class="addPizza" type="button">+ Ajouter</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="redSection">
+            <div>
+                <span class="sectionEyebrow light">BIENVENUE CHEZ FORNO</span>
+                <h2>On fait des pizzas.<br>Et de bons <em>moments.</em></h2>
+            </div>
+            <div>
+                <p>Le bruit de la croute, la mozzarella qui file, les discussions qui continuent. FORNO, c'est cet table
+                    ou l'on prend le temps de se retrouver.</p>
+                <p>Des recettes familieres, quelques nouvelles envies et toujours une bonne raison de partager une part.
+                </p>
+                <button class="lightButton" type="button">L'histoire de la maison</button>
+            </div>
+        </section>
+        <section class="teamSection" id="apropos">
+            <div class="teamImage">
+                <img src="images/chefs.png" alt="equipe Forno">
+                <span>LES MAINS DERRIERE VOTRE PROCHAINE PART</span>
+            </div>
+            <div class="teamText">
+                <span class="sectionEyebrow">NOTRE EQUIPE EN CUISINE</span>
+                <h2>Du savoir-faire.<br>Et beaucoup de <em>coeur.</em></h2>
+                <p>Une bonne pizza commence avec des mains qui connaissent la pate. Nos chefs se retrouvent autour de la
+                    meme idee : respecter les classiques et donner du caractere a chaque recette.</p>
+                <div class="values">
+                    <div><span>01</span><strong>Le geste du pizzaiolo</strong><small>Etaler, garnir, enfourner. Chaque
+                            detail compte.</small></div>
+                    <div><span>02</span><strong>Le gout des recettes</strong><small>Le bon equilibre entre simplicite et
+                            gourmandise.</small></div>
+                    <div><span>03</span><strong>L'esprit de la maison</strong><small>Une equipe qui aime cuisiner et
+                            recevoir.</small></div>
+                </div>
+                <a href="#contact">Rencontrer l'esprit FORNO</a>
+            </div>
+        </section>
+        <section class="horizonsSection">
+            <div class="boxHorizonsSection">
+
+                <div class="horizonsTitle">
+                    <div>
+                        <span class="sectionEyebrow light">PRES DE VOUS, PLUS LOIN AUSSI</span>
+                        <h2>Quatre horizons.<br>La meme <em>passion.</em></h2>
+                    </div>
+                    <p>Casablanca, Belgique, France, Emirats.<br>La bonne pizza n'a pas de frontieres.</p>
+                </div>
+                <div class="horizonsGrid">
+                    <div><span>01 / 04</span><small>Maroc</small>
+                        <h3>Casablanca</h3>
+                        <p>Notre ancrage marocain, une table genereuse et une envie de partager.</p><a
+                            href="#contact">Contacter cette maison</a>
+                    </div>
+                    <div><span>02 / 04</span><small>Europe</small>
+                        <h3>Belgique</h3>
+                        <p>La convivialite belge rencontre notre passion pour la pizza.</p><a href="#contact">Contacter
+                            cette maison</a>
+                    </div>
+                    <div><span>03 / 04</span><small>Europe</small>
+                        <h3>France</h3>
+                        <p>Le plaisir des bonnes choses, autour d'une pizza bien faite.</p><a href="#contact">Contacter
+                            cette maison</a>
+                    </div>
+                    <div><span>04 / 04</span><small>Moyen-Orient</small>
+                        <h3>Emirats arabes unis</h3>
+                        <p>Une cuisine ouverte sur le monde, pour toutes les envies.</p><a href="#contact">Contacter
+                            cette
+                            maison</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sectionReservation">
+            <div class="reservationSection" id="contact">
+                <div>
+                    <h2>Une bonne pizza,<br><em>ca se partage.</em></h2>
+                </div>
+                <button type="button" id="tableBtn">On passe a table ?</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footerMain">
+            <div class="footerBrand">
+                <h2>forno<span>.</span></h2>
+                <p>Une pate doree. Une table vivante.<br>La bonne part de votre journee.</p>
+            </div>
+            <div>
+                <h4>La maison</h4>
+                <a href="#accueil">Accueil</a>
+                <a href="#carte">Notre carte</a>
+                <a href="#apropos">A propos de nous</a>
+                <a href="#contact">Contactez-nous</a>
+            </div>
+            <div>
+                <h4>Nos horizons</h4>
+                <a href="#contact">Casablanca</a>
+                <a href="#contact">Belgique</a>
+                <a href="#contact">France</a>
+                <a href="#contact">Emirats arabes unis</a>
+            </div>
+            <div>
+                <h4>On se retrouve ?</h4>
+                <p>Une question, une grande table ou une occasion a celebrer.</p>
+                <a href="#contact">Parlons-en</a>
+            </div>
+        </div>
+        <div class="footerBottom"><span>© 2026 FORNO · La pizza, comme on l'aime.</span><span>Commandes et messages de
+                demonstration</span></div>
+    </footer>
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
