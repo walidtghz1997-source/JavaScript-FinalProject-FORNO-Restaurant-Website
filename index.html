@@ -11,9 +11,7 @@
 </head>
 
 <body>
-
     <header>
-
         <div class="boxHeader">
             <div class="boxLogo">
                 <h1 class="logo">forno <span class="squarecolor"></span></h1>
@@ -22,8 +20,8 @@
             <nav id="navBar" class="navBare">
                 <a class="lementNavbare" href="#accueil">Accueil</a>
                 <a class="lementNavbare" href="#carte">Notre carte</a>
-                <a class="lementNavbare" href="#apropos">A propos</a>
-                <a class="lementNavbare" href="#contact">contact</a>
+                <a class="lementNavbare" href="about.html">A propos</a>
+                <a class="lementNavbare" href="contact.html">contact</a>
             </nav>
             <div class="boxPanier">
                 <i class="fa-solid fa-bag-shopping"></i>
@@ -84,119 +82,8 @@
                     <option value="vegetariennes">Vegetariennes</option>
                 </select>
             </div>
-            <div class="menuForno"><span id="pizzaCount">6 pizzas a decouvrir</span></div>
-            <div class="pizzaGrid" id="pizzaGrid">
-                <div class="pizzaCard">
-                    <div class="boxImage">
-                        <div class="pizzaImage">
-                            <img src="images/margherita.png" alt="Margherita">
-                            <span class="pizzaTag">L'ORIGINALE</span>
-                            <span class="pizzaNumber">01</span>
-                        </div>
-                    </div>
-                    <div class="pizzaInfo">
-                        <span class="pizzaType">Classiques</span>
-                        <h3>Margherita</h3>
-                        <p>Sauce tomate, mozzarella & basilic frais</p>
-                        <div class="pizzaBottom">
-                            <span class="pizzaPrice">49<small> MAD</small></span>
-                            <button class="addPizza" type="button">+ Ajouter</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="pizzaCard">
-                    <div class="boxImage">
-                        <div class="pizzaImage">
-                            <img src="images/diavola.png" alt="Diavola">
-                            <span class="pizzaTag">UN PEU DE CARACTERE</span>
-                            <span class="pizzaNumber">02</span>
-                        </div>
-                    </div>
-                    <div class="pizzaInfo">
-                        <span class="pizzaType">Epicée</span>
-                        <h3>Diavola</h3>
-                        <p>Sauce tomate, mozzarella, pepperoni de boeuf & piment.</p>
-                        <div class="pizzaBottom">
-                            <span class="pizzaPrice">69<small> MAD</small></span>
-                            <button class="addPizza" type="button">+ Ajouter</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="pizzaCard">
-                    <div class="boxImage">
-
-                        <div class="pizzaImage">
-                            <img src="images/pollo.png" alt="Poulet">
-                            <span class="pizzaTag">LA GENEREUSE</span>
-                            <span class="pizzaNumber">03</span>
-                        </div>
-                    </div>
-                    <div class="pizzaInfo">
-                        <span class="pizzaType">Signatures</span>
-                        <h3>Poulet</h3>
-                        <p>Crème, poulet rôti, champignons & mozzarella.</p>
-                        <div class="pizzaBottom">
-                            <span class="pizzaPrice">79<small> MAD</small></span>
-                            <button class="addPizza" type="button">+ Ajouter</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="pizzaCard">
-                    <div class="boxImage">
-
-                        <div class="pizzaImage">
-                            <img src="images/giardino.png" alt="Giardino">
-                            <span class="pizzaTag">TOUT EN COULEURS</span>
-                            <span class="pizzaNumber">04</span>
-                        </div>
-                    </div>
-                    <div class="pizzaInfo">
-                        <span class="pizzaType">Végétarienne</span>
-                        <h3>Giardino</h3>
-                        <p>Sauce tomate, poivrons, champignons & olives.</p>
-                        <div class="pizzaBottom">
-                            <span class="pizzaPrice">65<small> MAD</small></span>
-                            <button class="addPizza" type="button">+ Ajouter</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="pizzaCard">
-                    <div class="boxImage">
-                        <div class="pizzaImage">
-                            <img src="images/tonno.png" alt="Torno">
-                            <span class="pizzaTag">L'AIR DU LARGE</span>
-                            <span class="pizzaNumber">05</span>
-                        </div>
-                    </div>
-                    <div class="pizzaInfo">
-                        <span class="pizzaType">Signatures</span>
-                        <h3>Torno</h3>
-                        <p>Sauce tomate, thon, oignons rouges & mozzarella.</p>
-                        <div class="pizzaBottom">
-                            <span class="pizzaPrice">75<small> MAD</small></span>
-                            <button class="addPizza" type="button">+ Ajouter</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="pizzaCard">
-                    <div class="boxImage">
-                        <div class="pizzaImage">
-                            <img src="images/quattro-formaggi.png" alt="Quattro Formaggi">
-                            <span class="pizzaTag">POUR LES AMOUREUX</span>
-                            <span class="pizzaNumber">06</span>
-                        </div>
-                    </div>
-                    <div class="pizzaInfo">
-                        <span class="pizzaType">Classiques</span>
-                        <h3>Quattro Formaggi</h3>
-                        <p>Mozzarella, gorgonzola, chèvre & parmesan.</p>
-                        <div class="pizzaBottom">
-                            <span class="pizzaPrice">85<small> MAD</small></span>
-                            <button class="addPizza" type="button">+ Ajouter</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div class="menuMeta"><span id="pizzaCount">6 pizzas a decouvrir</span></div>
+            <div class="pizzaGrid" id="pizzaGrid"></div>
         </section>
         <section class="redSection">
             <div>
@@ -229,52 +116,45 @@
                     <div><span>03</span><strong>L'esprit de la maison</strong><small>Une equipe qui aime cuisiner et
                             recevoir.</small></div>
                 </div>
-                <a href="#contact">Rencontrer l'esprit FORNO</a>
+                <a href="contact.html">Rencontrer l'esprit FORNO</a>
             </div>
         </section>
         <section class="horizonsSection">
-            <div class="boxHorizonsSection">
-
-                <div class="horizonsTitle">
-                    <div>
-                        <span class="sectionEyebrow light">PRES DE VOUS, PLUS LOIN AUSSI</span>
-                        <h2>Quatre horizons.<br>La meme <em>passion.</em></h2>
-                    </div>
-                    <p>Casablanca, Belgique, France, Emirats.<br>La bonne pizza n'a pas de frontieres.</p>
+            <div class="horizonsTitle">
+                <div>
+                    <span class="sectionEyebrow light">PRES DE VOUS, PLUS LOIN AUSSI</span>
+                    <h2>Quatre horizons.<br>La meme <em>passion.</em></h2>
                 </div>
-                <div class="horizonsGrid">
-                    <div><span>01 / 04</span><small>Maroc</small>
-                        <h3>Casablanca</h3>
-                        <p>Notre ancrage marocain, une table genereuse et une envie de partager.</p><a
-                            href="#contact">Contacter cette maison</a>
-                    </div>
-                    <div><span>02 / 04</span><small>Europe</small>
-                        <h3>Belgique</h3>
-                        <p>La convivialite belge rencontre notre passion pour la pizza.</p><a href="#contact">Contacter
-                            cette maison</a>
-                    </div>
-                    <div><span>03 / 04</span><small>Europe</small>
-                        <h3>France</h3>
-                        <p>Le plaisir des bonnes choses, autour d'une pizza bien faite.</p><a href="#contact">Contacter
-                            cette maison</a>
-                    </div>
-                    <div><span>04 / 04</span><small>Moyen-Orient</small>
-                        <h3>Emirats arabes unis</h3>
-                        <p>Une cuisine ouverte sur le monde, pour toutes les envies.</p><a href="#contact">Contacter
-                            cette
-                            maison</a>
-                    </div>
+                <p>Casablanca, Belgique, France, Emirats.<br>La bonne pizza n'a pas de frontieres.</p>
+            </div>
+            <div class="horizonsGrid">
+                <div><span>01 / 04</span><small>Maroc</small>
+                    <h3>Casablanca</h3>
+                    <p>Notre ancrage marocain, une table genereuse et une envie de partager.</p><a
+                        href="#contact">Contacter cette maison</a>
+                </div>
+                <div><span>02 / 04</span><small>Europe</small>
+                    <h3>Belgique</h3>
+                    <p>La convivialite belge rencontre notre passion pour la pizza.</p><a href="#contact">Contacter
+                        cette maison</a>
+                </div>
+                <div><span>03 / 04</span><small>Europe</small>
+                    <h3>France</h3>
+                    <p>Le plaisir des bonnes choses, autour d'une pizza bien faite.</p><a href="#contact">Contacter
+                        cette maison</a>
+                </div>
+                <div><span>04 / 04</span><small>Moyen-Orient</small>
+                    <h3>Emirats arabes unis</h3>
+                    <p>Une cuisine ouverte sur le monde, pour toutes les envies.</p><a href="#contact">Contacter cette
+                        maison</a>
                 </div>
             </div>
         </section>
-
-        <section class="sectionReservation">
-            <div class="reservationSection" id="contact">
-                <div>
-                    <h2>Une bonne pizza,<br><em>ca se partage.</em></h2>
-                </div>
-                <button type="button" id="tableBtn">On passe a table ?</button>
+        <section class="reservationSection" id="contact">
+            <div>
+                <h2>Une bonne pizza,<br><em>ca se partage.</em></h2>
             </div>
+            <button type="button" id="tableBtn">On passe a table ?</button>
         </section>
     </main>
     <footer>
@@ -287,25 +167,35 @@
                 <h4>La maison</h4>
                 <a href="#accueil">Accueil</a>
                 <a href="#carte">Notre carte</a>
-                <a href="#apropos">A propos de nous</a>
-                <a href="#contact">Contactez-nous</a>
+                <a href="about.html">A propos de nous</a>
+                <a href="contact.html">Contactez-nous</a>
             </div>
             <div>
                 <h4>Nos horizons</h4>
-                <a href="#contact">Casablanca</a>
-                <a href="#contact">Belgique</a>
-                <a href="#contact">France</a>
-                <a href="#contact">Emirats arabes unis</a>
+                <a href="contact.html">Casablanca</a>
+                <a href="contact.html">Belgique</a>
+                <a href="contact.html">France</a>
+                <a href="contact.html">Emirats arabes unis</a>
             </div>
             <div>
                 <h4>On se retrouve ?</h4>
                 <p>Une question, une grande table ou une occasion a celebrer.</p>
-                <a href="#contact">Parlons-en</a>
+                <a href="contact.html">Parlons-en</a>
             </div>
         </div>
         <div class="footerBottom"><span>© 2026 FORNO · La pizza, comme on l'aime.</span><span>Commandes et messages de
                 demonstration</span></div>
     </footer>
+
+    <div class="cartPanel" id="cartPanel">
+        <div class="cartHead">
+            <h3>Mon panier</h3><button id="closeCart" type="button">×</button>
+        </div>
+        <div id="cartItems"></div>
+        <div class="cartTotal"><span>Total</span><strong id="cartTotal">0 MAD</strong></div>
+        <button id="checkoutBtn" type="button">Commander</button>
+    </div>
+    <div class="cartOverlay" id="cartOverlay"></div>
     <script src="JS/script.js"></script>
 </body>
 

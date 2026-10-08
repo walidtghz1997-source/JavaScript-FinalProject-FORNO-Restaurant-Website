@@ -1,0 +1,640 @@
+:root {
+    --paper: #f4f0e8;
+    --card: #fbf8f1;
+    --ink: #24231f;
+    --muted: #77736b;
+    --line: #ddd7cc;
+    --red: #df3827;
+    --darkred: #c92d20;
+    --white: #ffffff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f0e7;
+    color: #25231f;
+}
+
+button,
+input,
+select {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+header {
+    width: 100%;
+    border-bottom: 1px solid #ded8cd;
+    padding: 10px;
+}
+
+.boxHeader {
+    height: 74px;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    padding: 0 18px;
+    justify-content: space-between;
+}
+
+.boxLogo {
+    width: 50%;
+
+}
+
+.logo {
+    font-size: 50px;
+    letter-spacing: -1px;
+    font-weight: 900;
+    line-height: 40px;
+    margin-bottom: 8px;
+    display: flex;
+    gap: 0;
+}
+
+.squarecolor {
+    color: #df3826;
+    font-size: 55px;
+
+}
+
+.artisanale {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+}
+
+.navBare {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    gap: 20px;
+}
+
+.lementNavbare {
+    font-size: 16px;
+    color: #292622;
+    text-decoration: none;
+}
+
+.navBare .lementNavbare:nth-child(3) {
+    color: #e23826;
+    font-weight: 700;
+}
+
+.boxPanier {
+    border: 1px solid #d9d3c8;
+    border-radius: 8px;
+    height: 32px;
+    padding: 20px 15px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.boxPanier i {
+    font-size: 16px;
+}
+
+.totalproductCart {
+    background: #df3826;
+    color: #fff;
+    min-width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.burger {
+    display: none;
+}
+
+.heroSection {
+    max-width: 100%;
+    margin: auto;
+    min-height: 510px;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 18px 35px;
+}
+
+.boxHeadHeroSection {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid #ded8cd;
+    gap: 30px;
+    padding-bottom: 50px;
+}
+.maisonForno{
+    color: #df3826;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+.paraHistoire{
+    color:rgb(157, 153, 144);
+font-size: 14px;
+font-weight: 600;
+line-height: 25px;
+}
+.titleHistoire{
+    color: rgb(37, 36, 31);
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 1;
+}
+em{
+       color: #df3826;
+    font-family: Georgia, "Times New Roman", serif;
+    font-style: italic;
+    font-weight: 400;
+}
+.boxHeroPizza{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.boxRight {
+    width: 50%;
+    height: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(247, 242, 233);
+}
+
+.boxRight img {
+    width: 450px;
+
+    height: 450px;
+    object-fit: cover;
+    filter: saturate(1);
+
+}
+.boxHistoire{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 48%;
+    h3{
+        font-size: 40px;
+    }
+}
+
+.btnDecouvrir {
+    background: #df3826;
+    border: 0;
+    color: white;
+    border-radius: 8px;
+    width: 200px;
+    padding: 16px 10px;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+
+.heroLabel {
+    position: absolute;
+    left: 70px;
+    bottom: 30px;
+    background: rgb(255, 250, 241);
+    padding: 10px 12px;
+    font-size: 10px;
+    font-weight: 600;
+    color: rgb(45, 44, 39);
+    z-index: 2;
+    border-radius: 5px;
+}
+
+.sectionIntro h2,
+.redSection h2,
+.teamText h2,
+.horizonsTitle h2 {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: -1.7px;
+    margin-top: 10px;
+}
+
+.sectionIntro h2 em,
+.redSection h2 em,
+.teamText h2 em,
+.horizonsTitle h2 em,
+.reservationSection em {
+    font-family: Georgia, serif;
+    color: #df3826;
+    font-weight: 400;
+}
+
+.sectionIngredieent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding-top: 80px;
+    background-color: rgb(245, 241, 233);
+}
+
+.boxIngredieent {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+
+}
+
+.boxIngredieent span {
+    color: #df3826;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1;
+
+}
+
+.boxIngredieent h2 {
+    font-size: 45px;
+    font-weight: 900;
+}
+
+.boxIngredieent h2 em {
+    color: #df3826;
+    font-family: Georgia, "Times New Roman", serif;
+    font-style: italic;
+    font-weight: 400;
+
+}
+
+.boxNosTrois {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+}
+
+.boxNosTroisContent {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 0px;
+    border-top: 1px solid #ded8cd;
+    font-size: 14px;
+    font-weight: 600;
+
+    span {
+        color: #df3826;
+    }
+
+    p span {
+        color: rgb(134, 130, 121);
+        line-height: 30px;
+    }
+}
+
+.redSection {
+    width: 100%;
+    min-height: 250px;
+    background: rgb(235, 228, 215);
+    color: rgb(37, 36, 31);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxRedSection {
+    width: 42%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+
+.redSection .sectionEyebrow {
+    color: #fff;
+}
+
+.redSection h2 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.redSection h2 em {
+    color: #df3826;
+
+}
+
+.redSection span {
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #6e6565;
+
+}
+
+
+.teamSection {
+    width: 90%;
+    margin: auto;
+    padding: 70px 18px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+}
+
+.teamImage {
+    height: 370px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.teamImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.teamImage span {
+    position: absolute;
+    bottom: 14px;
+    left: 14px;
+    right: 14px;
+    background: #fffaf1;
+    padding: 9px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.teamText h2 {
+    font-size: 45px;
+    font-weight: 800;
+}
+
+.teamText p {
+    font-size: 16px;
+    color: #777;
+    line-height: 1.65;
+    margin: 18px 0;
+}
+
+.values {
+    border-top: 1px solid #ded8cd;
+}
+
+.values div {
+    display: grid;
+    grid-template-columns: 28px 1fr;
+    gap: 5px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ded8cd;
+}
+
+.values span {
+    font-size: 14px;
+    color: #df3826;
+}
+
+.values strong {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.values small {
+    grid-column: 2;
+    font-size: 12px;
+    color: #777;
+}
+
+.teamText>a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #df3826;
+    font-size: 14px;
+    text-underline-offset: 3px;
+    font-weight: 700;
+
+}
+
+.horizonsSection {
+    width: 100%;
+    min-height: 350px;
+    background: #22211e;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.boxHorizonsSection {
+    width: 90%;
+    min-height: 350px;
+}
+
+.horizonsTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 35px;
+}
+
+.horizonsTitle .sectionEyebrow {
+    color: #df3826;
+
+}
+
+.horizonsTitle h2 {
+    font-size: 45px;
+}
+
+.horizonsTitle p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #c6c1b9;
+    line-height: 1.5;
+}
+
+.horizonsGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.horizonsGrid>div {
+    border-top: 1px solid #55514b;
+    padding-top: 13px;
+}
+
+.horizonsGrid span {
+    font-size: 12px;
+    color: #a7a096;
+}
+
+.horizonsGrid small {
+    display: block;
+    color: #df3826;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 17px;
+}
+
+.horizonsGrid h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 7px 0 20px;
+}
+
+.horizonsGrid p {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #c6c1b9;
+    min-height: 50px;
+}
+
+.horizonsGrid a {
+    font-size: 14px;
+    color: #fff;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.sectionReservation {
+    width: 100%;
+}
+
+.reservationSection {
+    width: 90%;
+    /* max-width: 85%; */
+    margin: auto;
+    padding: 35px 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reservationSection h2 {
+    font-size: 35px;
+    font-weight: 900;
+    line-height: 1.2;
+}
+
+.reservationSection button {
+    background: transparent;
+    border: 1px solid #888;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+footer {
+    width: 100%;
+    border-top: 1px solid #ded8cd;
+}
+
+.footerMain {
+    width: 90%;
+    /* max-width: 85%; */
+    margin: auto;
+    padding: 35px 18px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.3fr;
+    gap: 35px;
+}
+
+.footerBrand h2 {
+    font-size: 45px;
+    letter-spacing: -2px;
+}
+
+.footerBrand h2 span {
+    color: #df3826;
+}
+
+.footerMain h4 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.footerMain a,
+.footerMain p {
+    display: block;
+    font-size: 16px;
+    color: #777;
+    text-decoration: none;
+    line-height: 1.9;
+}
+
+.footerMain>div:last-child a {
+    color: #df3826;
+    font-size: 16px;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.footerBottom {
+    border-top: 1px solid #ded8cd;
+    max-width: 85%;
+    margin: auto;
+    padding: 14px 18px;
+    display: flex;
+    justify-content: space-between;
+    color: #888;
+    font-size: 12px;
+}
+
+
+.cartPanel {
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 400px;
+    height: 100vh;
+    background: #fff;
+    z-index: 1000;
+    transition: .3s;
+}
+.cartPanel.active {
+    right: 0;
+}
+.cartOverlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.4);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+}
+.cartOverlay.active {
+    opacity: 1;
+    visibility: visible;
+}

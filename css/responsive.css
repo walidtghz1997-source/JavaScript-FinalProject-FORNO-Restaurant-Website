@@ -23,6 +23,7 @@ width: auto;
 grid-template-columns: 1fr;
 padding-top: 45px;
 }
+
 .boxLeft {
 text-align: center;
 }
@@ -207,4 +208,424 @@ line-height: 1.8;
 width: 100%;
 right: -100%;
 }
+}
+
+/* contact */
+@media (max-width: 1000px) {
+    .boxHeader,
+    .heroSection,
+    .pizzaSection,
+    .chefSection,
+    .locationsSection,
+    .valuesSection,
+    .teamSection,
+    .storySection,
+    .faqSection,
+    .contactSection,
+    .footerMain,
+    .footerBottom,
+    .innerHero {
+        width: min(100% - 32px, 900px);
+    }
+
+    .navBare {
+        width: 45%;
+        gap: 12px;
+    }
+
+    .lementNavbare {
+        font-size: 12px;
+    }
+
+    .pizzaContainer,
+    .chefContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .locationsContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .locationsContainer article:nth-child(2) {
+        border-right: 0;
+    }
+
+    .locationsContainer article:nth-child(3),
+    .locationsContainer article:nth-child(4) {
+        border-top: 1px solid var(--line);
+    }
+
+    .footerMain {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .boxHeader {
+        min-height: 74px;
+    }
+
+    .boxLogo {
+        width: auto;
+    }
+
+    .logo {
+        font-size: 30px;
+    }
+
+    .navBare {
+        display: none;
+    }
+
+    .boxPanier {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        position: relative;
+    }
+
+    .burger > #burger {
+        font-size: 28px;
+        line-height: 1;
+        color: var(--ink);
+    }
+
+    .boxShopping {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 18px;
+        position: relative;
+    }
+
+    .boxShopping .totalproductCart {
+        position: absolute;
+        top: -10px;
+        right: -10px;
+    }
+
+    .navBare.navBarActive {
+        display: flex;
+        position: absolute;
+        top: 74px;
+        right: 16px;
+        width: 210px;
+        padding: 22px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+        background: var(--ink);
+        border-radius: 6px;
+        box-shadow: 0 20px 40px rgba(0,0,0,.15);
+    }
+
+    .navBare.navBarActive a {
+        color: var(--white);
+    }
+
+    .heroSection {
+        grid-template-columns: 1fr;
+        padding: 60px 0;
+        gap: 40px;
+    }
+
+    .heroPizza {
+        height: 350px;
+    }
+
+    .titleHistoire,
+    .innerHero h2 {
+        font-size: 52px;
+    }
+
+    .filterBar {
+        flex-direction: column;
+    }
+
+    .filterBar select {
+        width: 100%;
+    }
+
+    .pizzaContainer,
+    .chefContainer,
+    .storySection,
+    .contactSection,
+    .faqSection {
+        grid-template-columns: 1fr;
+    }
+
+    .locationsContainer,
+    .valuesContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .locationsContainer article,
+    .valuesContainer article {
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+    }
+
+    .locationsContainer article:nth-child(2),
+    .locationsContainer article:nth-child(3),
+    .locationsContainer article:nth-child(4) {
+        border-top: 0;
+    }
+
+    .locationsContainer article:last-child,
+    .valuesContainer article:last-child {
+        border-bottom: 0;
+    }
+
+    .storyImage {
+        height: 380px;
+    }
+
+    .formRow {
+        grid-template-columns: 1fr;
+    }
+
+    .footerMain {
+        grid-template-columns: 1fr 1fr;
+        gap: 35px 20px;
+    }
+
+    .footerBottom {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .boxHeader,
+    .heroSection,
+    .pizzaSection,
+    .chefSection,
+    .locationsSection,
+    .valuesSection,
+    .teamSection,
+    .storySection,
+    .faqSection,
+    .contactSection,
+    .footerMain,
+    .footerBottom,
+    .innerHero {
+        width: calc(100% - 28px);
+    }
+
+    .pizzaContainer,
+    .chefContainer,
+    .footerMain {
+        grid-template-columns: 1fr;
+    }
+
+    .heroPizza {
+        height: 290px;
+    }
+
+    .titleHistoire,
+    .innerHero h2 {
+        font-size: 43px;
+        letter-spacing: -2px;
+    }
+
+    .pizzaImage {
+        height: 220px;
+    }
+
+    .contactInfo,
+    .contactFormBox {
+        padding: 22px;
+    }
+
+    .cartSidebar {
+        padding: 22px;
+    }
+    
+    .contactSection {
+    width: min(1200px, calc(100% - 48px));
+    margin: auto;
+    padding: 40px 0 80px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.contactInfo {
+    background: var(--red);
+    color: var(--white);
+    border-radius: 8px;
+    padding: 28px;
+}
+
+.contactInfo .sectionEyebrow {
+    color: var(--white);
+}
+
+.contactInfo h2 {
+    font-size: 40px;
+    margin: 18px 0;
+}
+
+.contactInfo em {
+    color: var(--white);
+}
+
+.contactInfo > p {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.locationList {
+    margin-top: 28px;
+}
+
+.locationList article {
+    display: grid;
+    grid-template-columns: 35px 1fr;
+    gap: 12px;
+    padding: 17px 0;
+    border-top: 1px solid rgba(255,255,255,.22);
+}
+
+.locationList article:first-child {
+    background: rgba(255,255,255,.08);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.locationList span {
+    font-size: 11px;
+    opacity: .7;
+}
+
+.locationList h3 {
+    font-size: 15px;
+}
+
+.locationList p {
+    font-size: 11px;
+    opacity: .75;
+}
+
+.contactNote {
+    border-top: 1px solid rgba(255,255,255,.22);
+    margin-top: 18px;
+    padding-top: 20px;
+}
+
+.contactFormBox {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.contactFormBox h2 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.contactFormBox > div > p {
+    color: var(--muted);
+    font-size: 12px;
+    margin-bottom: 25px;
+}
+
+.contactForm {
+    display: grid;
+    gap: 18px;
+}
+
+.contactForm label {
+    display: grid;
+    gap: 7px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.formRow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.contactForm textarea {
+    resize: vertical;
+}
+
+.faqSection {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 60px;
+    padding-top: 0;
+}
+
+.faqList details {
+    border-top: 1px solid var(--line);
+    padding: 18px 0;
+}
+
+.faqList details:last-child {
+    border-bottom: 1px solid var(--line);
+}
+
+.faqList summary {
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+}
+
+.faqList summary::-webkit-details-marker {
+    display: none;
+}
+
+.faqList summary span {
+    color: var(--red);
+    font-size: 20px;
+}
+
+.faqList p {
+    color: var(--muted);
+    font-size: 13px;
+    margin-top: 12px;
+}
+#accueil, .boxNosTrois{
+    display: flex;
+    flex-direction: column;
+}
+.boxHeroPizza{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+.boxRight{
+    width: 100%;
+    .heroLabel{
+        width: 200px;
+        height: 30px;
+        font-size: 10px;
+        left: 0;
+    }
+    img{
+        /* display: none; */
+        max-width: 300px;
+        max-height: 300px;
+    }
+}
+}
+.boxHistoire{
+    width: 90%;
+}
+
+
+
+    .faqSection {
+        width: calc(100% - 32px);
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
 }

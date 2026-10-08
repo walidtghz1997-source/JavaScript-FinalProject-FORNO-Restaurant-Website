@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORNO — Contact</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="https://kit.fontawesome.com/50950c4c6a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+
+        <div class="boxHeader">
+            <div class="boxLogo">
+                <h1 class="logo">forno <span class="squarecolor">.</span></h1>
+                <span class="artisanale">PIZZA ARTISANALE</span>
+            </div>
+            <nav id="navBar" class="navBare">
+                <a class="lementNavbare" href="index.html">Accueil</a>
+                <a class="lementNavbare" href="#carte">Notre carte</a>
+                <a class="lementNavbare" href="about.html">A propos</a>
+                <a class="lementNavbare" href="#contact">contact</a>
+            </nav>
+            <div class="boxPanier">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span class="lementNavbare">Mon panier</span>
+                <span class="totalproductCart">0</span>
+            </div>
+            <div class="burger">
+                <span id="burger">☰</span>
+                <span class="boxShopping"><i class="fa-solid fa-bag-shopping"></i></span>
+                <span class="totalproductCart">0</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="heroSection" id="accueil">
+            <div class="boxHeadHeroSection">
+                <span class="maisonForno">ON GARDE LE CONTACT</span>
+                <h2 class="titleHistoire">Une question ?<br>Une grande <em>table ?</em></h2>
+                <p class="paraHistoire">Choisissez votre maison et laissez-nous un mot. Pour une pizza, une
+                    occasion<br>ou simplement pour dire bonjour.</p>
+            </div>
+        </section>
+
+        <section class="contactSection">
+            <div class="contactInfo">
+                <span class="sectionEyebrow">QUATRE HORIZONS, UNE MAISON</span>
+                <h2>Parlons <em>pizza.</em></h2>
+                <p>Une réservation à préparer, un événement à imaginer ou une question sur la carte : tout commence par
+                    une conversation.</p>
+                <div class="locationList">
+                    <article><span>01</span>
+                        <div>
+                            <h3>Casablanca</h3>
+                            <p>Maroc</p>
+                        </div>
+                    </article>
+                    <article><span>02</span>
+                        <div>
+                            <h3>Belgique</h3>
+                            <p>Europe</p>
+                        </div>
+                    </article>
+                    <article><span>03</span>
+                        <div>
+                            <h3>France</h3>
+                            <p>Europe</p>
+                        </div>
+                    </article>
+                    <article><span>04</span>
+                        <div>
+                            <h3>Émirats arabes unis</h3>
+                            <p>Moyen-Orient</p>
+                        </div>
+                    </article>
+                </div>
+                <p class="contactNote">Téléphone : +212 5 22 00 00 00<br>Ouvert tous les jours de 11h30 à 23h00.</p>
+            </div>
+
+            <div class="contactFormBox">
+                <div id="contactFormContent">
+                    <h2>Un petit <em>mot.</em></h2>
+                    <p>Les champs marqués d'un astérisque sont obligatoires.</p>
+                    <form id="contactForm" class="contactForm">
+                        <div class="formRow">
+                            <label>Votre nom *
+                                <input id="contactName" type="text" placeholder="Ex. Sara Amrani">
+                            </label>
+                            <label>Votre e-mail *
+                                <input id="contactEmail" type="email" placeholder="vous@exemple.com">
+                            </label>
+                        </div>
+                        <label>Votre maison FORNO *
+                            <select id="contactLocation">
+                                <option value="">Choisir une maison</option>
+                                <option>Casablanca</option>
+                                <option>Belgique</option>
+                                <option>France</option>
+                                <option>Émirats arabes unis</option>
+                            </select>
+                        </label>
+                        <div class="subject">
+                            <label>Votre sujet</label>
+
+                            <div class="subject-options">
+
+                                <label class="subject-option">
+                                    <input type="radio" name="subject" value="question" checked>
+                                    <span class="radio"></span>
+                                    <span>Une question</span>
+                                </label>
+
+                                <label class="subject-option">
+                                    <input type="radio" name="subject" value="reservation">
+                                    <span class="radio"></span>
+                                    <span>Réservation</span>
+                                </label>
+
+                                <label class="subject-option">
+                                    <input type="radio" name="subject" value="evenement">
+                                    <span class="radio"></span>
+                                    <span>Événement</span>
+                                </label>
+
+                            </div>
+                        </div>
+                        <label>Votre message *
+                            <textarea id="contactMessage" rows="6"
+                                placeholder="Dites-nous ce que vous avez en tête..."></textarea>
+                        </label>
+                        <p id="contactError" class="formError"></p>
+                        <button class="mainButton" type="submit">Préparer mon message</button>
+                    </form>
+                </div>
+                <div id="contactSuccess" class="contactSuccess"></div>
+            </div>
+        </section>
+
+        <section class="faqSection">
+            <div>
+                <span class="sectionEyebrow">AVANT DE NOUS ÉCRIRE</span>
+                <h2>Les petites <em>questions.</em></h2>
+            </div>
+            <div class="faqList">
+                <details>
+                    <summary>Puis-je venir avec un groupe ? <span>+</span></summary>
+                    <p>Oui, contactez la maison choisie afin de préparer votre table.</p>
+                </details>
+                <details>
+                    <summary>Comment signaler une allergie ? <span>+</span></summary>
+                    <p>Indiquez-la dans votre message ou prévenez notre équipe avant la commande.</p>
+                </details>
+                <details>
+                    <summary>Je prépare un événement. À qui écrire ? <span>+</span></summary>
+                    <p>Utilisez le formulaire et notre équipe vous répondra rapidement.</p>
+                </details>
+            </div>
+        </section>
+    </main>
+
+    <aside id="cartSidebar" class="cartSidebar">
+        <div class="cartHeader">
+            <div><span class="sectionEyebrow">VOTRE COMMANDE</span>
+                <h2>Mon panier</h2>
+            </div>
+            <button id="closeCart" type="button">×</button>
+        </div>
+        <div id="cartItems" class="cartItems"></div>
+        <div class="cartBottom">
+            <div class="cartTotal"><span>Total</span><strong id="cartTotal">0 MAD</strong></div>
+            <form id="orderForm" class="orderForm">
+                <input id="customerName" type="text" placeholder="Votre nom">
+                <input id="customerPhone" type="tel" placeholder="Votre téléphone">
+                <select id="orderType">
+                    <option value="">Choisir le mode</option>
+                    <option value="delivery">Livraison</option>
+                    <option value="pickup">À emporter</option>
+                </select>
+                <button class="mainButton" type="submit">Confirmer la commande</button>
+                <p id="orderError" class="formError"></p>
+            </form>
+            <div id="orderConfirmation" class="orderConfirmation"></div>
+        </div>
+    </aside>
+    <div id="cartOverlay" class="cartOverlay"></div>
+
+    <footer>
+        <div class="footerMain">
+            <div class="footerBrand">
+                <h2>forno<span>.</span></h2>
+                <p>Une pâte dorée. Une table vivante.<br>La bonne part de votre journée.</p>
+            </div>
+            <div>
+                <h4>La maison</h4><a href="index.html">Accueil</a><a href="index.html#carte">Notre carte</a><a
+                    href="about.html">À propos de nous</a><a href="contact.html">Contactez-nous</a>
+            </div>
+            <div>
+                <h4>Nos horizons</h4><a href="contact.html">Casablanca</a><a href="contact.html">Belgique</a><a
+                    href="contact.html">France</a><a href="contact.html">Émirats arabes unis</a>
+            </div>
+            <div>
+                <h4>On se retrouve ?</h4>
+                <p>Une question, une grande table ou une occasion à célébrer.</p><a href="contact.html">Parlons-en</a>
+            </div>
+        </div>
+        <div class="footerBottom"><span>© 2026 FORNO · La pizza, comme on l'aime.</span><span>Commandes et messages de
+                démonstration</span></div>
+    </footer>
+
+    <div class="cartPanel" id="cartPanel">
+        <div class="cartHead">
+            <h3>Mon panier</h3>
+            <button id="closeCart" type="button">×</button>
+        </div>
+        <div id="cartItems"></div>
+        <div class="cartTotal">
+            <span>Total</span>
+            <strong id="cartTotal">0 MAD</strong>
+        </div>
+        <button id="checkoutBtn" type="button">Commander</button>
+    </div>
+    <div class="cartOverlay" id="cartOverlay"></div>
+   
+
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
